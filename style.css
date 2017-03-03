@@ -1,0 +1,15 @@
+h1{
+  display: block;
+  text-align: center; }
+
+input{
+  display: block;
+  height: 20px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid pink;
+  border-radius: 4px; }
+.formGroup{
+	width: 50%;
+	margin: 10px auto;
+}
