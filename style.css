@@ -1,6 +1,10 @@
+html{
+	background-image: url('./space.jpg') }
 h1{
   display: block;
-  text-align: center; }
+  text-align: center;
+	color: white;
+	letter-spacing: .2em}
 
 input{
   display: block;
