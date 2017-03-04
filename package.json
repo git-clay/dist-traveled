@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/git-clay/dist-traveled#readme",
   "dependencies": {
-    "express": "^4.15.0"
+    "express": "^4.15.0",
+    "sugar-cubed": "^1.0.0"
   }
 }

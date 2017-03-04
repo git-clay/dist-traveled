@@ -7,14 +7,22 @@
 <body>
 	<section class="formGroup">
 		<h1>Sp4c3 Tr4vLeR</h1>
-		<form action="" method="post">
-			<input type="text" name="dob" placeholder="dob">
+		<form id="userForm">
+			<a href="./solar-system-codepen/solar.html">code pen</a>
+
+			<input type="date" name="dob" placeholder="dob">
 			<input type="text" name="numMoved" placeholder="times moved">
 			<input type="text" name="trips" placeholder="trips">
-			<input type="submit" name="submit" placeholder="Submit">
+			<input type="button" onclick="onSubmit()" value='Submit'>
 
 		</form>
+		<div id="results">
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+
 	</section>
-	<script type="text/javascript" src="./server.js"></script>
+	<script type="text/javascript" src="./front.js"></script>
 </body>
 </html>

@@ -1,5 +1,8 @@
 html{
-	background-image: url('./space.jpg') }
+	background-image: url('./space.jpg');
+	background-repeat: no-repeat;
+	background-size: cover; 
+	height: 100%;}
 h1{
   display: block;
   text-align: center;
@@ -8,7 +11,7 @@ h1{
 
 input{
   display: block;
-  height: 20px;
+  height: 33px;
   margin: 10px 0;
   width: 100%;
   border: 1px solid pink;
