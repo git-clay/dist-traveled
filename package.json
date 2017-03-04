@@ -20,6 +20,8 @@
   "homepage": "https://github.com/git-clay/dist-traveled#readme",
   "dependencies": {
     "express": "^4.15.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "sugar-cubed": "^1.0.0"
   }
 }
