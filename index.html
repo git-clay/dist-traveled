@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Distance</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/earth.css">
+
 </head>
 <body>
 	<section class="formGroup">
@@ -12,18 +14,21 @@
 			<button><a href="./codepen/solar.html">solar system</a></button>
 
 
-			<input type="date" name="dob" placeholder="dob">
-			<input type="text" name="numMoved" placeholder="times moved">
-			<input type="text" name="trips" placeholder="trips">
+			<input type="date" name="dob" placeholder="dob" required="">
+			<!-- <input type="text" name="numMoved" placeholder="times moved"> -->
+			<!-- <input type="text" name="trips" placeholder="trips"> -->
 			<input type="button" onclick="onSubmit()" value='Submit'>
 
 		</form>
 		<div id="results">
-			<ul>
-				<li></li>
-			</ul>
 		</div>
-
+<div style="top:175px; position: relative;">
+    <div class="earth">
+      <div class="earth--shadow"></div>
+    </div>
+    <div class="moon"></div>
+    <div class="stars"></div>
+    </div>
 	</section>
 	<script type="text/javascript" src="./front.js"></script>
 </body>

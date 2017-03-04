@@ -3,9 +3,9 @@ function onSubmit(){
 	var form =document.getElementById('userForm');
 	var formInput=form.elements;
 	var userInput={
-		dob: new Date(formInput.dob.value),
-		numMoved: formInput.numMoved.value,
-		trips: formInput.trips.value
+		dob: new Date(formInput.dob.value)
+		// numMoved: formInput.numMoved.value,
+		// trips: formInput.trips.value
 	}
 	form.style.display = 'none'
 		console.log(userInput)
@@ -36,18 +36,28 @@ function allTheMaths(userInput){
 			earthSpin = 1800;
 
 
-	var	earthSpinDist = (hr*earthSpin),
-		earthDist = (earthSpinDist*earth),
-		solarDist = (earthDist*solar),
-		milkyWayDist = (solarDist*milkyWay),
+	var	earthSpinDist = (Math.round(hr*earthSpin)),
+		earthDist = (Math.round(earthSpinDist*earth)),
+		solarDist = (Math.round(earthDist*solar)),
+		milkyWayDist = (Math.round(solarDist*milkyWay));
+		
 		allDist = [
-			'you: ' + earthSpinDist + ' km',
-			'earth: ' + earthDist + ' km',
-			'sun: ' + solarDist + ' km',
-			'galaxy: ' + milkyWayDist + ' km'
+			'you: ' + earthSpinDist.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' km',
+			'earth: ' + earthDist.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' km',
+			'sun: ' + solarDist.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' km',
+			'galaxy: ' + milkyWayDist.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' km'
 			]
 	console.log('distance traveled: ', allDist)
+	var results = document.getElementById('results'),
+		ul 		= document.createElement('ul')
+	results.append(ul);
+	allDist.forEach(function(e){
+		var li  = document.createElement('li');
+		console.log(e)
 
+		li.innerHTML = e
+		ul.appendChild(li)
+	})
 }
 /*
 total: 1,260 km/s or 4,537,120 km/hr
